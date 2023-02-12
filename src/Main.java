@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println(isRN(2001));
         System.out.println(isSZ("2001"));
-        int [] arrs = {1,5,3,7,9,4,6,99,11,22,2,8};
+        int [] arrs = {1,5,3,7,9,4,6,99,11,22,2,8,54};
         arrs = mpsort(arrs);
         for (int i=0;i<arrs.length;i++) {
             System.out.print(arrs[i] + ",");
