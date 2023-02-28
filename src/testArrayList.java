@@ -28,6 +28,7 @@ public class testArrayList {
         System.out.println(ll);
         ll.removeFirst();
         ll.removeLast();
+        Collections.sort(ll);
         System.out.println(ll);
         System.out.println(ll.getFirst());
         System.out.println(ll.getLast());

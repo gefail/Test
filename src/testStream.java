@@ -2,10 +2,10 @@ import java.io.*;
 
 public class testStream {
     public static void main(String[] args) throws IOException {
-        /*BufferedReader br = new BufferedReader( new InputStreamReader(System.in));
-        String ss = br.readLine();
+        BufferedReader br = new BufferedReader( new InputStreamReader(System.in));
+        String s1 = br.readLine();
         br.close();
-        System.out.println(ss);*/
+        System.out.println(s1);
 
         File f = new File("C:\\Wen\\Temp\\tt.txt");
         InputStream is = new FileInputStream(f);
@@ -23,6 +23,7 @@ public class testStream {
                 "666\n" +
                 "张三";
         os.write(s2.getBytes("UTF-8"));
+        os.flush();
         os.close();
 
         String filepath = "C:\\Wen\\Temp";

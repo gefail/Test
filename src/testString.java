@@ -1,6 +1,6 @@
 public class testString {
     public static void main(String[] args) {
-        String str1 = "222";
+        String str1 = "aaa";
         String str2 = new String("test");
         char [] chr = {'t','e','s','t','!'};
         String str3 = new String(chr);
@@ -10,6 +10,7 @@ public class testString {
         double a1 = 56.7;
         int a2 = 1000;
         System.out.printf("1:%f,2:%d,3:%s",a1,a2,str3);
+        System.out.println();
         System.out.println(String.format("1:%f,2:%d,3:%s",a1,a2,str3));
 
         System.out.println(str3.isEmpty());
@@ -19,6 +20,10 @@ public class testString {
         for(char i:chr2){
             System.out.println(i);
         }
+        System.out.println(str1.compareTo(str2));
+        System.out.println(str2.matches("te(.*)"));
+
+
 
 
 

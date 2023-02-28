@@ -1,4 +1,5 @@
 import java.lang.reflect.Array;
+import java.util.Arrays;
 
 public class testarray {
     public static void main(String[] args) {
@@ -48,6 +49,8 @@ public class testarray {
         System.out.println("****************************");
 
         ssprint(arr4);
+        System.out.println(Arrays.binarySearch(arr4[0],"Luck1"));
+
 
 
     }
@@ -66,6 +69,7 @@ public class testarray {
             aa[j] = array[i];
 
         }
+        Arrays.sort(aa);
         return  aa;
 
     }
